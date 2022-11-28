@@ -1,0 +1,45 @@
+25-Nov-2022 22:13:48.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/8.5.84
+25-Nov-2022 22:13:48.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Nov 16 2022 13:34:24 UTC
+25-Nov-2022 22:13:48.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  8.5.84.0
+25-Nov-2022 22:13:48.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+25-Nov-2022 22:13:48.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+25-Nov-2022 22:13:48.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+25-Nov-2022 22:13:48.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\Java\jdk-18
+25-Nov-2022 22:13:48.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          18+36-2087
+25-Nov-2022 22:13:48.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+25-Nov-2022 22:13:48.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\22_2-instagram\Instagram\apache-tomcat-8.5.84
+25-Nov-2022 22:13:48.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\22_2-instagram\Instagram\apache-tomcat-8.5.84
+25-Nov-2022 22:13:48.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Nov-2022 22:13:48.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+25-Nov-2022 22:13:48.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+25-Nov-2022 22:13:48.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Nov-2022 22:13:48.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Nov-2022 22:13:48.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\conf\logging.properties
+25-Nov-2022 22:13:48.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Nov-2022 22:13:48.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+25-Nov-2022 22:13:48.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Nov-2022 22:13:48.784 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+25-Nov-2022 22:13:48.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\22_2-instagram\Instagram\apache-tomcat-8.5.84
+25-Nov-2022 22:13:48.786 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\22_2-instagram\Instagram\apache-tomcat-8.5.84
+25-Nov-2022 22:13:48.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\temp
+25-Nov-2022 22:13:48.788 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.0]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.35]을(를) 로드했습니다.
+25-Nov-2022 22:13:48.791 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+25-Nov-2022 22:13:48.793 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+25-Nov-2022 22:13:48.809 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1q  5 Jul 2022]
+25-Nov-2022 22:13:48.916 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+25-Nov-2022 22:13:48.986 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1077 ms
+25-Nov-2022 22:13:49.085 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+25-Nov-2022 22:13:49.091 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/8.5.84]
+25-Nov-2022 22:13:49.119 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\docs]을(를) 배치합니다.
+25-Nov-2022 22:13:49.849 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom [SHA1PRNG] 알고리즘을 사용하여, 세션 ID를 생성하기 위한 SecureRandom 객체를 생성하는데, [158] 밀리초가 소요됐습니다.
+25-Nov-2022 22:13:50.028 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\docs]에 대한 배치가 [909] 밀리초에 완료되었습니다.
+25-Nov-2022 22:13:50.045 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\examples]을(를) 배치합니다.
+25-Nov-2022 22:13:50.979 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\examples]에 대한 배치가 [935] 밀리초에 완료되었습니다.
+25-Nov-2022 22:13:50.986 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\host-manager]을(를) 배치합니다.
+25-Nov-2022 22:13:51.093 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\host-manager]에 대한 배치가 [107] 밀리초에 완료되었습니다.
+25-Nov-2022 22:13:51.097 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\manager]을(를) 배치합니다.
+25-Nov-2022 22:13:51.187 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\manager]에 대한 배치가 [89] 밀리초에 완료되었습니다.
+25-Nov-2022 22:13:51.192 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\ROOT]을(를) 배치합니다.
+25-Nov-2022 22:13:51.252 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\22_2-instagram\Instagram\apache-tomcat-8.5.84\webapps\ROOT]에 대한 배치가 [60] 밀리초에 완료되었습니다.
+25-Nov-2022 22:13:51.260 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+25-Nov-2022 22:13:51.441 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2451 ms
