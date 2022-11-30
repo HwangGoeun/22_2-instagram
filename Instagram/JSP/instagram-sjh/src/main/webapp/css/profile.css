@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    background: #fafafa;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.brand_logo{
+    display: block;  
+    width: 15rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.side_left{
+	width:160px;
+	height:400px;
+	background-color:white;
+	float:left;
+	margin:0px;
+}
+.side_left_box{
+	width:95%;
+	height:45%;
+	background-color:blue;
+	float:left;
+	margin:5px;
+}
+
+.side_right{
+	width:850px;
+	height:400px;
+	background-color:#FAFAFA;
+	float:left;
+	margin:0px;
+}
+.side_right_box{
+	width:95%;
+	height:45%;
+	background-color:skyblue;
+	margin:5px;
+	margin-top:100%;
+}

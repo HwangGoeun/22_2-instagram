@@ -4,8 +4,7 @@ public class User {
 	private String userID;
 	private String userPassword;
 	private String userName;
-	private String userGender;
-	private String userPhoneNumber;
+	private String userNickname;
 	
 	public String getUserID() {
 		return userID;
@@ -25,16 +24,10 @@ public class User {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getUserGender() {
-		return userGender;
+	public String getUserNickname() {
+		return userNickname;
 	}
-	public void setUserGender(String userGender) {
-		this.userGender = userGender;
-	}
-	public String getUserPhoneNumber() {
-		return userPhoneNumber;
-	}
-	public void setUserPhoneNumber(String userPhoneNumber) {
-		this.userPhoneNumber = userPhoneNumber;
+	public void setUserNickname(String userNickname) {
+		this.userNickname = userNickname;
 	}
 }

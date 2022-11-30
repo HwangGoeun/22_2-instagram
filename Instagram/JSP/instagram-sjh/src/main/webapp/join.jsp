@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="css/join.css">
 </head>
 <body>
-	<div class="join-container">
+   
+	<div class="join_container">
 		<header class="logo">
-			<img class="brand-logo" src="img/brand_logo.png" alt="logo">
 			<ul>
+			 	<a href="#"><img class="brand_logo" src="img/brand_logo.png" alt="logo"></a>
 				<li>친구들의 사진과 동영상을 보려면</li>
 				<li>가입하세요.</li>
 			</ul>
@@ -28,7 +29,7 @@
 				<input class="name" type="text" placeholder="성명">
 				<input class="id" type="text" placeholder="사용자 이름">
 				<input class="pwd" type="password" placeholder="비밀번호">
-				<button class="joinBtn" type="button"><a href="#">가입</a></button>
+				<a href="#"><button class="joinBtn" onclick="joinClick()" type="button" >가입</button></a>
 			</form>
 	</div>
 		<div class="account_login">

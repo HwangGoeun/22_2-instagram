@@ -42,15 +42,13 @@ public class UserDAO {
 	}
 	
 	public int join(User user) {
-		String SQL = "INSERT INTO USER VALUES(?,?,?,?,?)";
+		String SQL = "INSERT INTO USER VALUES(?,?,?,?)";
 		try {
-			
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, user.getUserID());
 			pstmt.setString(2, user.getUserPassword());
 			pstmt.setString(3, user.getUserName());
-			pstmt.setString(4, user.getUserGender());
-			pstmt.setString(5, user.getUserPhoneNumber());
+			pstmt.setString(4, user.getUserNickname());
 			return pstmt.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
