@@ -1,114 +1,47 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@page import="java.sql.*"%>
-<%@page import="java.util.*"%>
-<%@page import="java.text.*" %>
-
-<%!
-	String userID = null;
-	String query = null;
-	String id = null;
-	String pw = null;
-	String name = null;
-	String nick = null;
-	String message = null;
-%>
-<%
-	request.setCharacterEncoding("utf-8");
-
-    Connection conn = null;
-    Statement stmt = null;
-    ResultSet rs = null;
-
-    userID = (String)session.getAttribute("userID");
-    
-    // JDBC driver loading
-    try {
-    	String url="jdbc:mysql://localhost/instagram";
-    	Class.forName("com.mysql.jdbc.Driver");
-    	conn=DriverManager.getConnection(url, "root" , "0000" );
-    	
-    	stmt = conn.createStatement();
-    	query = "SELECT * FROM instagram.user WHERE userID = " + userID;
-    	rs = stmt.executeQuery(query);
-    	
-    	while(rs.next()) {
-    		id = (String)rs.getString("userID");
-    		pw = rs.getString("userPassword");
-    		name = (String)rs.getString("userName");
-    		nick = rs.getString("userNickname");
-    		message = rs.getString("userMessage");
-    	}
-    } catch (Exception e) {
-    	e.printStackTrace();
-    } finally {
-    	if (rs != null) {
-    		try {
-    			rs.close();
-    		} catch (SQLException e) {
-    			e.printStackTrace();
-    		}
-    	}
-    	if (stmt != null) {
-    		try {
-    			stmt.close();
-    		} catch (SQLException e) {
-    			e.printStackTrace();
-    		}
-    	}
-    	if (conn != null) {
-    		try {
-    			conn.close();
-    		} catch (SQLException e) {
-    			e.printStackTrace();
-    		}
-    	}
-    }
-%>
+<%@ page language="java" contentType="text/html; carset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Instagram</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
     <link href="css/profile.css" rel="stylesheet" type="text/css">
-    <!-- favicon -->
+    <link href="css/follower.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicon.png">
     <link rel="instagram-icon" href="img/favicon.png">
 </head>
-
 <body>
-	<!-- navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="nav-1">
-                <a href="logout.jsp"><img class="logo_instagram_txt" src="img/brand_logo.png" alt="logo_text"></a>
-            </div>
-            <input id="searchInput" type="search" class="input-search" placeholder="검색">
-            <div class="nav-2">
-                <a href="profile.jsp"><img class="logo_instagram_txt" src="img/human.png" alt="profilet"></a>
-            </div>
+	<nav>
+      <div class="nav-container">
+        <div class="nav-1">
+            <a href="main.jsp"><img class="logo_instagram_txt" src="img/brand_logo.png" alt="logo_text"></a>
         </div>
+        <input id="searchInput" type="search" class="input-search" placeholder="검색">
+      	<div class="nav-2"></div>
+      </div>
     </nav>
-	<header>
+    <header>
         <div class="container">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="img/profile1.png">
+                    <img src="old/img/old/profile1.png">
                 </div>
                 <div class="profile-user-settings">
-                    <h1 class="profile-user-name"><%=name %></h1>
-                    <button class="btn profile-edit-btn">Edit Profile</button>
+                    <h1 class="profile-user-name">이름</h1>
+                   <button class="btn profile-edit-btn"> <a href="Edit_Profile.jsp">Edit Profile</a></button>
                     <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
                 </div>
                 <div class="profile-stats">
                     <ul>
                         <li><span class="profile-stat-count">164</span> posts</li>
-                        <li><span class="profile-stat-count">188</span> followers</li>
-                        <li><span class="profile-stat-count">206</span> following</li>
+                        <li><span class="profile-stat-count" id="popup_open_btn">188</span> followers</li>
+                        <li><span class="profile-stat-count" id="popup_open_btn2">206</span> following</li>
                     </ul>
                 </div>
                 <div class="profile-bio">
-                    <p><span class="profile-real-name"><%=name %></span><%=message %></p>
+                    <p><span class="profile-real-name">여기에 이름 들어가야 합니다!</span>상태 메시지는 여기에 넣어야 해요</p>
                 </div>
             </div>
         </div>
@@ -267,5 +200,44 @@
         </div>
         <!-- End of container -->
     </main>
+    <div id="my_modal">
+    	<div class="title">팔로워<a class="modal_close_btn"><img src="img/close.png" float="right" width="16px" height="16px" align="right"></a></div>
+    	
+       	 	<div class="content">
+       	 	
+            	<p>7월 27일 ~ 7월 31일까지는 당사 하계 휴가기간입니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	
+           	 	
+        	</div>
+       </div>
+       <div id="my_modal2">
+    	<div class="title">팔로잉<a class="modal_close_btn"><img src="img/close.png" float="right" width="16px" height="16px" align="right"></a></div>
+    	
+       	 	<div class="content">
+       	 	
+            	<p>7월 27일 ~ 7월 31일까지는 당사 하계 휴가기간입니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	<p>감사합니다.</p>
+           	 	
+           	 	
+        	</div>
+       </div>
+       <script type="text/javascript" src="js/popup.js"></script>
 </body>
 </html>

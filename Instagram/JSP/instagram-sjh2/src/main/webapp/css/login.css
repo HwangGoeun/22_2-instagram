@@ -58,6 +58,11 @@ img.logo_instagram {
 }
 a {
     cursor: default;
+    color : #00366B;
+    align-self: center;
+    font-size: 12px;
+    margin-top: 70px;
+    text-decoration-line : none;
 }
 .button_join {
     color : #00366B;

@@ -16,25 +16,11 @@
 
 <body>
 	<%
-		// 현재 세션 상태 체크
-		String userID = null;
-		if (session.getAttribute("userID") != null) {
-			userID = (String)session.getAttribute("userID");
-		}
-		// 이미 로그인 했다면 다시 로그인 할 수 없게 하기
-		if (userID != null) {
-			PrintWriter script = response.getWriter();
-			script.println("<script>");
-			script.println("location.href='main.jsp'");
-			script.println("</script>");
-		}
-		
 		UserDAO userDAO = new UserDAO();
-		int result = userDAO.login(user.getUserID(), user.getUserPassword());		
+		int result = userDAO.login(user.getUserID(), user.getUserPassword());
+		
 		if (result == 1) {
-			session.setAttribute("userID", user.getUserID());
 			PrintWriter script = response.getWriter();
-			response.sendRedirect("main.jsp");
 			script.println("<script>");
 			script.println("location.href = 'main.jsp'");
 			script.println("</script>");

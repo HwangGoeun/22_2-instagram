@@ -7,17 +7,19 @@
 	<title>Instagram</title>
     <link href="css/common.css" rel="stylesheet" type="text/css" />
     <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/favicon.png">
+    <link rel="instagram-icon" href="img/favicon.png">
 </head>
 
 <body>
 	<div class="container">
-        <img class="logo_instagram" src="img/logo_text.png" alt="instagram_logo">
+        <img class="logo_instagram" src="img/brand_logo.png" alt="instagram_logo">
         	<form action="loginAction.jsp" method="post">
-		        <input type="text" class="input_login" name="userID" id="userID" placeholder="전화번호, 사용자 이름 또는 이메일">
+		        sdafasdfasdf<input type="text" class="input_login" name="userID" id="userID" placeholder="전화번호, 사용자 이름 또는 이메일">
 		        <input type="password" class="input_login" name="userPassword" id="userPW" placeholder="비밀번호">
 		        <a href="#none"><button id="btn_login" disabled>로그인</button></a>
         	</form>
-        <span class="button_join"><a href="join.jsp">회원가입</a></span>
+        <a href="join.jsp"><span class="button_join">회원가입</span></a>
     </div>
     <script src="js/login.js"></script>
 </body>
