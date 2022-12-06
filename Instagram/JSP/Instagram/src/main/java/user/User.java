@@ -5,6 +5,7 @@ public class User {
 	private String userPassword;
 	private String userName;
 	private String userNickname;
+	private String searchInput;
 	
 	public String getUserID() {
 		return userID;
@@ -29,5 +30,8 @@ public class User {
 	}
 	public void setUserNickname(String userNickname) {
 		this.userNickname = userNickname;
+	}
+	public String getSearchInput() {
+		return searchInput;
 	}
 }

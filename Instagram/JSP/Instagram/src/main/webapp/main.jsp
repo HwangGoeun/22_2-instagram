@@ -86,7 +86,13 @@
             <div class="nav-1">
                 <a href="logout.jsp"><img class="logo_instagram_txt" src="img/brand_logo.png" alt="logo_text"></a>
             </div>
-            <input id="searchInput" type="search" class="input-search" placeholder="검색">
+            
+            <!-- /////////////////  이 부분 수정했습니다  ///////////////// -->
+            <form action="searchAction.jsp" method="post">
+	            <input name="searchInput" id="searchInput" type="search" class="input-search" placeholder="검색">
+            </form>
+            <!-- ///////////////// ///////////////// ///////////////// -->
+            
             <div class="nav-2">
                 <a href="profile.jsp"><img class="logo_instagram_txt" src="img/human.png" alt="profilet"></a>
             </div>
@@ -100,7 +106,7 @@
                 <header>
                     <div class="profile-of-article">
                         <img class="img-profile pic" src="img/favicon.png" alt="사진">
-                        <span class="userID main-id point-span">dlwlrma</span>
+                        <span class="userID main-id point-span">board</span>
                     </div>
                     <img class="icon-react icon-more" src="img/more.png" alt="more">
                 </header>
@@ -116,11 +122,11 @@
                 <div class="reaction">
                     <div class="liked-people">
                         <img class="pic" src="img/favicon.png" alt="johnnyjsuh님의 프로필 사진">
-                        <p><span class="point-span">johnnyjsuh</span>님 <span class="point-span">외 2,412,751명</span>이
+                        <p><span class="point-span">like</span>님 <span class="point-span">외 2,412,751명</span>이
                             좋아합니다</p>
                     </div>
                     <div class="description">
-                        <p><span class="point-span userID">dlwlrma</span> 🌱</p>
+                        <p><span class="point-span userID">board</span> 🌱</p>
                     </div>
                     <span class="sub-span">
                         댓글 4개 모두 보기
@@ -128,7 +134,7 @@
                     <div class="comment-section">
                         <ul class="comments">
                             <li>
-                                <span><span class="point-span userID">postmalone</span>내가 입으면 더 잘어울릴 것 같아</span>
+                                <span><span class="point-span userID">comment</span>댓글 기능 구현</span>
                                 <div>
                                     <img class="comment-more" src="img/more.png" alt="more">
                                     <div class="comment-like">

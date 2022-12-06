@@ -29,7 +29,7 @@
 				<input class="pwd" name="userPassword" type="password" placeholder="비밀번호">
 				<a href="#none"><button class="joinBtn">가입</button></a>
 			</form>
-	</div>
+		</div>
 		<div class="account_login">
 			<ul>
 				<li>계정이 있으신가요?</li>

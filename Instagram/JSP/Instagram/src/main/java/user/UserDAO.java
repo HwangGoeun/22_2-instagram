@@ -49,11 +49,25 @@ public class UserDAO {
 			pstmt.setString(2, user.getUserPassword());
 			pstmt.setString(3, user.getUserName());
 			pstmt.setString(4, user.getUserNickname());
-			pstmt.setString(5, null);
+			pstmt.setString(5, "");
 			return pstmt.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		return -1; //데이터베이스 오류
+	}
+	
+	public int search(String userID) {
+		String SQL = "SELECT userID FROM user WHERE userID = ?";
+		
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, userID);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return -1;	// 데이터베이스 오류
 	}
 }
