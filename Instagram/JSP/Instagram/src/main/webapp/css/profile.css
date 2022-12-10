@@ -7,7 +7,14 @@
 *::after {
     box-sizing: border-box;
 }
-
+header {
+    height: 60px;
+    padding-top: 94px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 body {
     font-family: "Open Sans", Arial, sans-serif;
     min-height: 100vh;
